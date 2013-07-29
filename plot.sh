@@ -5,8 +5,7 @@ if [[ "$#" != '1' ]]; then
     exit 1
 fi
 
-#zone="$(basename ${1%%.csv})"
-zone="$(basename ${1%%_HIT.csv})"
+zone="$(basename ${1%%.csv})"
 basedir="$(dirname $1)"
 
 echo "Processing $1"
