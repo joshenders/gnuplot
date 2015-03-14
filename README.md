@@ -1,4 +1,3 @@
-plot
-====
+# Gnuplot
 
-GNU Plot wrapper
+Various Gnuplot scripts
