@@ -1,4 +1,5 @@
 #!/usr/bin/gnuplot
+
 # gnuplot 5.0 patchlevel rc2
 
 # preroll
@@ -13,7 +14,7 @@ set terminal pngcairo size 900,640 enhanced font 'Verdana,10'
 set output 'world_histogram.png'
 
 # retrieve statistical properties of infile
-stats 'infile.dat' using 1 nooutput
+stats 'infile.dat' using (column('Avg Response (ms)')) nooutput
 
 # borders
 set boxwidth 0.1 absolute
