@@ -36,7 +36,7 @@ set grid xtics ytics mxtics
 set title 'Route53 response latency'
 set xlabel 'Milliseconds'
 set ylabel 'Frequency'
-set label sprintf("Max: %gms\nMedian: %gms\nSigma: %gms", STATS_max, STATS_median, floor(STATS_stddev)) at graph .86, .95
+set label sprintf("Max: %gms\nMedian: %gms\nSigma: %gms", STATS_max, STATS_median, floor(STATS_stddev)) boxed at graph .86, .95
 
 # histogram arithmetic
 binwidth = 5
